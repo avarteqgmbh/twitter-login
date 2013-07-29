@@ -115,7 +115,7 @@ class Twitter::Login
     access_token = authorize_from_request(request)
     
     # get and store authenticated user's info from Twitter
-    response = access_token.get('/1/account/verify_credentials.json')
+    response = access_token.get('/1.1/account/verify_credentials.json')
     request.session[:twitter_user] = user_hash_from_response(response)
     
     redirect_to_return_path(request)
