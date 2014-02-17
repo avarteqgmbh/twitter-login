@@ -15,7 +15,7 @@ class Twitter::Login
   
   DEFAULTS = {
     :return_to => '/',
-    :site => 'http://api.twitter.com',
+    :site => 'https://api.twitter.com',
     :authorize_path => '/oauth/authenticate'
   }
   
